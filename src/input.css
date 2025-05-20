@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    .content::before {
+        content: "\" ";
+    }
+    .content::after {
+        content: " \"";
+    }
+}
+
 @layer utilities {
     @keyframes fadein {
         from  {
